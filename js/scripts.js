@@ -161,7 +161,7 @@ function init() {
     });
     // 微博 ------------------
     $("#weibo-feed").html("<li>正在加载...</li>");
-    $.post("http://dev.xiumu.org/hi/weibo.php", function(a){
+    $.post("//dev.xiumu.org/hi/weibo.php", function(a){
         $("#weibo-feed").html(a).find("ul").addClass("weibo-slider");
         $("#weibo-feed").find("ul li").addClass("item");
         var ts = $(".weibo-slider");
